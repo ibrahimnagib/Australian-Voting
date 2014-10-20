@@ -1,50 +1,66 @@
 #!/usr/bin/env python
 
 
-class Ballot:
-	def __init__(self, num_candidates, candidate_list):
-		self.ballot_list = []
-		self.num_candidates = num_candidates
-		self.candidate_list = candidate_list
-		self.count = []
+def read (infile):
+	line = infile.readline()
+	infile.readline()
 
-	def add(self, line):
-		self.votes.append(line.split(" "))
+	num_elections = int(line)
 
-	def counter(self):
-		for i in range(len(self.ballot_list)):
-			print(int(self.ballot_list[i[0]]))
-			#count[int(self.votes[i][0]) += 1
-
-		#print(count[0], count[1], count[2])
-
+	return num_elections
 
 
 class Candidate:
-	def __init__(self, name):
+	def __init__ (self, name):
 		self.name = name
-		self.num_votes = 0
+		self.ballots = []
+	
+	def __str__ (self):
+		return self.name
+	
+	def add (self, ballot):
+		self.ballots.append(ballot)
+	
+	def get_ballots (self):
+		return self.ballots
+	
+	def num_votes (self):
+		num_votes = len(self.ballots)
+		return num_votes
+	
+	def remove (self):
+		self.ballots = []
 
-	def get_num_votes():
-		pass
+class Ballot:
+	def __init__ (self, line):
+		self.index = 0
+		self.votes = []
 
-	def __next__(self):
-		pass
+		for vote in line.split(" "):
+			vote = int(vote)
+			self.votes.append(vote)
+	
+	def __str__ (self):
+		return str(self.votes)
+	
+	def get_vote (self):
+		index = self.index
+		self.index += 1
+		return self.votes[index]
 
-
-
-def read(file):
-	line = file.readline()
-	file.readline()
-	return line, file
 
 def election(file):
 	candidate_list = []
+	ballot_list = []
 	num_candidates = int(file.readline())
 	for i in range(num_candidates):
 		 candidate_list.append(Candidate(file.readline()))
 
+
 	ballot = Ballot(num_candidates, candidate_list)
+	for vote in ballot:
+		pass
+		
 	for votes in Ballot.ballot_list:
 		
 	while file != "":
