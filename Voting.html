@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Voting</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Voting</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/ibrahim/Desktop/voting/Voting.py">/Users/ibrahim/Desktop/voting/Voting.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="Voting.html#Ballot">Ballot</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Voting.html#Candidate">Candidate</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Ballot">class <strong>Ballot</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Ballot">Ballot</a>&nbsp;class&nbsp;for&nbsp;creating&nbsp;ballot&nbsp;objects<br>
+that&nbsp;can&nbsp;hold&nbsp;lists&nbsp;of&nbsp;ballots&nbsp;as&nbsp;well&nbsp;as<br>
+index&nbsp;through&nbsp;those&nbsp;lists<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Ballot-__init__"><strong>__init__</strong></a>(self, prefs)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Candidate">class <strong>Candidate</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Candidate">Candidate</a>&nbsp;class&nbsp;for&nbsp;creating&nbsp;candidate&nbsp;objects,<br>
+makes&nbsp;it&nbsp;easier&nbsp;to&nbsp;access&nbsp;to&nbsp;attributes&nbsp;such&nbsp;as<br>
+name&nbsp;and&nbsp;number,&nbsp;also&nbsp;holds&nbsp;candidate&nbsp;ballots&nbsp;and<br>
+modifies&nbsp;and&nbsp;re-assigns&nbsp;ballots<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Candidate-__init__"><strong>__init__</strong></a>(self, name, candidate_number)</dt></dl>
+
+<dl><dt><a name="Candidate-cache_ballot"><strong>cache_ballot</strong></a>(self, ballot)</dt></dl>
+
+<dl><dt><a name="Candidate-cand_name"><strong>cand_name</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Candidate-cand_number"><strong>cand_number</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Candidate-cand_votecount"><strong>cand_votecount</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Candidate-get_vote"><strong>get_vote</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Candidate-mod_ballot"><strong>mod_ballot</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Candidate-view_ballot"><strong>view_ballot</strong></a>(self)</dt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-loser"><strong>loser</strong></a>(vote_list, vote_dict, cand_list)</dt><dd><tt>Determines&nbsp;the&nbsp;candidate&nbsp;with&nbsp;the&nbsp;least&nbsp;amount<br>
+of&nbsp;votes,&nbsp;eliminates&nbsp;that&nbsp;candidate,&nbsp;and&nbsp;re-assigns<br>
+their&nbsp;ballot&nbsp;to&nbsp;its&nbsp;next&nbsp;choice&nbsp;candidate</tt></dd></dl>
+ <dl><dt><a name="-read_data"><strong>read_data</strong></a>(infile, w)</dt><dd><tt>infile&nbsp;is&nbsp;the&nbsp;sys.stdin<br>
+w&nbsp;is&nbsp;a&nbsp;writer<br>
+reads&nbsp;through&nbsp;the&nbsp;elections,&nbsp;returning<br>
+the&nbsp;number&nbsp;of&nbsp;elections,&nbsp;number&nbsp;of&nbsp;candidates<br>
+as&nbsp;well&nbsp;as&nbsp;reading&nbsp;all&nbsp;of&nbsp;the&nbsp;candidate&nbsp;names<br>
+and&nbsp;ballots&nbsp;and&nbsp;creating&nbsp;objects</tt></dd></dl>
+ <dl><dt><a name="-run_voting"><strong>run_voting</strong></a>(r, w)</dt></dl>
+ <dl><dt><a name="-solve_election"><strong>solve_election</strong></a>(cand_list, total_ballot)</dt><dd><tt>Takes&nbsp;in&nbsp;a&nbsp;list&nbsp;of&nbsp;candidate&nbsp;objects&nbsp;as&nbsp;well&nbsp;as<br>
+total&nbsp;ballots,&nbsp;and&nbsp;constantly&nbsp;checks&nbsp;if&nbsp;a&nbsp;candidate<br>
+has&nbsp;majority,&nbsp;or&nbsp;if&nbsp;there&nbsp;is&nbsp;a&nbsp;tie</tt></dd></dl>
+ <dl><dt><a name="-test_tie"><strong>test_tie</strong></a>(vote_list)</dt><dd><tt>Determines&nbsp;if&nbsp;all&nbsp;candidates<br>
+have&nbsp;the&nbsp;same&nbsp;number&nbsp;of&nbsp;votes</tt></dd></dl>
+ <dl><dt><a name="-test_winner"><strong>test_winner</strong></a>(vote_dict, total_ballot)</dt><dd><tt>Looks&nbsp;for&nbsp;winners&nbsp;in&nbsp;the&nbsp;dictionary<br>
+and&nbsp;returns&nbsp;their&nbsp;ballots</tt></dd></dl>
+</td></tr></table>
+</body></html>
