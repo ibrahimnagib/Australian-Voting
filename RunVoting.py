@@ -1,12 +1,6 @@
 # RunVoting.py
 
 import sys
-from voting import election, read
+from Voting import final_election
 
-def main():
-	num_elections, file = read(sys.stdin)
-	while num_elections > 0:
-		election(file)
-		num_elections -= 1
-
-main()
+final_election(sys.stdin, sys.stdout)
