@@ -1,0 +1,131 @@
+commit 7f464dab0c5527e97225f6221689eeabca5c224a
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 17:35:40 2014 -0500
+
+    Create TestVoting.out
+
+commit b6f58884cc48b96c1a73fb0f761c0c3cc7368155
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 17:34:13 2014 -0500
+
+    Update TestVoting.py
+
+commit f515a29e1f786a7eb1d1330fcabaa3453ba0a08f
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 16:25:38 2014 -0500
+
+    updated TestVoting.py
+    
+    Working TestVoting.py
+
+commit 65e2efd1c6dc85a68addf31e90d7db5303726ba9
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 16:19:54 2014 -0500
+
+    Create Voting.html
+
+commit fa2b244c99789eebba2f85d970120dfa4ce47ea4
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 16:07:28 2014 -0500
+
+    Final Commit
+
+commit d78b582988eafe7d16b548f0df088889eae6234d
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 16:06:19 2014 -0500
+
+    Final Commit
+    
+    Final Commit, working code
+
+commit 1281b1c45cd0e269279f8fc030a60aeeec01c118
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 04:27:58 2014 -0500
+
+    Update and rename voting.py to Voting.py
+
+commit 5dd48d4e79874e1b86369478653ac0041d42615d
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 04:27:07 2014 -0500
+
+    Rename TestVoting.in to RunVoting.in
+
+commit c09e08214b4c95b69212240a416c7e885173c5cc
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 04:26:45 2014 -0500
+
+    Rename TestVoting.out to RunVoting.out
+
+commit d266140ff43a5335fb7df4e15bd8f9aef4d86170
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 04:25:43 2014 -0500
+
+    Create TestVoting.in
+
+commit 19fb01b67b664d21e0787f9e50cbc010b17a6208
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 04:25:20 2014 -0500
+
+    Create TestVoting.out
+
+commit 6533a5c9b64e346c77d432b731f182baa28f797a
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Oct 23 02:30:49 2014 -0500
+
+    Update TestVoting.py
+
+commit cc76f0cadd5872a587a76339f5904278d42e4c27
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Oct 22 20:52:02 2014 -0500
+
+    Update voting.py
+
+commit 8050233e87419e347a1eff9e011aa122eff2d38d
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Oct 22 20:51:01 2014 -0500
+
+    Update RunVoting.py
+
+commit a8438b861ab581350807ee603b1307345edc47b4
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Oct 22 15:17:20 2014 -0500
+
+    Update TestVoting.py
+    
+    updated to start unit testing
+
+commit e61345a6838a09e3960bd89590b6c1592d9a4d29
+Author: Jash Choraria <jashchoraria@hotmail.com>
+Date:   Wed Oct 22 12:00:13 2014 -0500
+
+    voting.py added with classes and solving function which works for 1 test case
+
+commit e347ceb6ab8d9faa56dc1afd48648c81a5981d16
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Mon Oct 20 10:03:22 2014 -0500
+
+    fixed the candidate and ballot class
+
+commit 1132fda8a72a14c99e4a47ac07675e5430a4a66b
+Author: Ahmed Nagib <anagib@Ahmeds-MacBook-Pro.local>
+Date:   Sun Oct 19 16:30:39 2014 -0500
+
+    updating RunVoting.py
+
+commit 3db4d525ae37e2e454b2c156e496ad2706fc9754
+Author: Ahmed Nagib <anagib@Ahmeds-MacBook-Pro.local>
+Date:   Sun Oct 19 16:13:18 2014 -0500
+
+    commiting new files
+
+commit f85ce7f81ed71ceccb8335889eff489938061e28
+Author: ibrahim nagib <ibrahimn@cs.utexas.edu>
+Date:   Wed Oct 15 19:07:51 2014 -0500
+
+    adding
+
+commit 5ed34f1d0c07ad20e2fd25a91c6397af36c604e4
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Mon Oct 13 21:10:21 2014 -0500
+
+    Initial commit
