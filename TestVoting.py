@@ -9,26 +9,29 @@ from Voting import Candidate, Ballot, test_tie, test_winner, run_voting, read_da
 
 class TestVoting(TestCase):
     # ----
-    # run_voting
+    # read_data
     # ----
 
-    # def test_run_voting_1(self) :
-    #     r = StringIO("1\n\n3\nJohn\nJane\nSirhan\n1 2 3\n2 1 3\n2 3 1\n1 2 3\n3 1 2")
-    #     w = StringIO(" ")
-    #     a,b,c,d,e = read_data(r,w)
-    #     self.assertEqual(a, 1)
+    def test_run_voting_1(self) :
+        r = StringIO("1\n\n3\nJohn\nJane\nSirhan\n1 2 3\n2 1 3\n2 3 1\n1 2 3\n3 1 2")
+        w = StringIO(" ")
+        a,b,c,d = read_data(r,w)
+        self.assertEqual(a, 0)
+        self.assertEqual(d, 3)
 
-    # def test_run_voting_2(self) :
-    #     r = StringIO("1\n\n1\nA\n1")
-    #     w = StringIO()
-    #     run_voting(r,w)
-    #     self.assertEqual(w, "A\n")
-    #
-    # def test_run_voting_3(self) :
-    #     r = StringIO("1\n\n3\nA\nJohn\nJane\nSirhan\n1 3 2\n2 1 3\n3 1 2")
-    #     w = StringIO()
-    #     run_voting(r,w)
-    #     self.assertEqual(w, "John\nJane\nSirhan")
+    def test_run_voting_2(self) :
+        r = StringIO("1\n\n1\nA\n1")
+        w = StringIO(" ")
+        a,b,c,d = read_data(r,w)
+        self.assertEqual(a, 0)
+        self.assertEqual(d, 1)
+    
+    def test_run_voting_3(self) :
+        r = StringIO("1\n\n4\nA\nJohn\nJane\nSirhan\n1 3 2\n2 1 3\n3 1 2")
+        w = StringIO(" ")
+        a,b,c,d = read_data(r,w)
+        self.assertEqual(a, 0)
+        self.assertEqual(d, 4)
 
 
     # ----
